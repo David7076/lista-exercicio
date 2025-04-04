@@ -12,15 +12,15 @@ public class Hora {
     }
 
     private int validarhoras(int hora) {
-        return (hora >= 0 && hora >= 23 ? hora: 0);
+        return (hora >= 0 && hora <= 23 ? hora: 0);
     }
 
     private int validarMinuto(int minuto) {
         return (minuto >= 0 && minuto <= 59 ? minuto : 0);
     }
 
-    private int validarSegundo(int segundos) {
-        return validarMinuto(segundos);
+    private int validarSegundo(int segundo) {
+        return validarMinuto(segundo);
     }
 
     public String formatar() {
